@@ -126,7 +126,7 @@ void findPerson(Addressbooks* abs){
 	cin>>name;
 	//判断指定的联系人是否存在通讯录中
 	int ret=isExist(abs,name);
-	if(ret!=-1){
+	if(ret!=-1){//若联系人存在 
 		cout<<"姓名: "<<abs->personArray[ret].m_Name<<"\t";
 		cout<<"性别: "<<(abs->personArray[ret].m_Sex==1?"男":"女")<<"\t";
 		cout<<"年龄: "<<abs->personArray[ret].m_Age<<"\t";
